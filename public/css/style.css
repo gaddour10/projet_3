@@ -46,6 +46,126 @@ a {
   color: black;
 }
 
+.fonctionnement {
+  padding-bottom: 60px;
+  font-family: "Roboto", sans-serif;
+}
+.fonctionnement h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 40px;
+}
+.fonctionnement__blocs {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  height: 300px;
+  margin-left: 10px;
+}
+.fonctionnement__blocs--design {
+  max-width: 100%;
+  cursor: pointer;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: flex-start;
+  font-size: 13px;
+  width: 400px;
+  background-color: whitesmoke;
+  border-radius: 20px;
+  box-shadow: 0px 2px 10px 0px #c2c2c2;
+  height: 70px;
+}
+.fonctionnement__blocs--design i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-right: 15px;
+}
+.fonctionnement__blocs--design p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  left: -15px;
+  background-color: #9356DC;
+  border-radius: 20px;
+  width: 30px;
+  height: 30px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.fonctionnement__blocs--design:hover {
+  background-color: #f2eafb;
+}
+@media (max-width: 600px) {
+  .fonctionnement {
+    padding-bottom: 60px;
+    font-family: "Roboto", sans-serif;
+  }
+  .fonctionnement h1 {
+    padding-left: 20px;
+  }
+  .fonctionnement__blocs {
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+    margin-left: 10px;
+  }
+  .fonctionnement__blocs--design {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: flex-start;
+    font-size: 13px;
+    width: 90%;
+    background-color: whitesmoke;
+    border-radius: 20px;
+    box-shadow: 0px 2px 10px 0px #c2c2c2;
+    margin: auto;
+    margin-left: 10px;
+    height: 70px;
+  }
+  .fonctionnement__blocs--design i {
+    padding-right: 15px;
+  }
+  .fonctionnement__blocs--design p {
+    position: relative;
+    left: -15px;
+    background-color: #9356DC;
+    border-radius: 20px;
+    width: 30px;
+    height: 30px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .fonctionnement__blocs--design:hover {
+    background-color: #f2eafb;
+  }
+}
+
+.backgroundimg {
+  object-fit: cover;
+  margin: auto;
+  position: relative;
+  width: 100%;
+  height: 500px;
+  margin-bottom: -200px;
+}
+@media (max-width: 1000px) {
+  .backgroundimg {
+    height: 100%;
+    margin-bottom: -45px;
+  }
+}
+
 .restaurants {
   margin: auto;
   padding-top: 30px;
