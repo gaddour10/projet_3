@@ -16,6 +16,36 @@ button:hover {
   box-shadow: 0px 0px 10px 0px #343434;
 }
 
+.topsectionv0 {
+  max-width: 100%;
+  font-family: "roboto";
+  margin: auto;
+  flex-direction: column;
+  width: 100%;
+  height: 250px;
+  background-color: whitesmoke;
+  border-top-right-radius: 0px;
+}
+.topsectionv0 h1 {
+  text-align: center;
+  padding-top: 30px;
+  margin: auto;
+  padding-bottom: 20px;
+  width: 70%;
+}
+.topsectionv0 p {
+  text-align: center;
+  margin: auto;
+  padding-top: 10px;
+  padding-top: 0px;
+  width: 75%;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
 .restaurants {
   margin: auto;
   padding-top: 30px;
