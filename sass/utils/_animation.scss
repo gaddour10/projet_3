@@ -1,0 +1,89 @@
+@keyframes rotate {
+    0% {
+        transform: rotate(0);
+}
+100% {
+        transform: rotate(360deg);
+    }
+}
+
+  @keyframes slide-left {
+    0% {
+              transform: scaleX(0);
+    }
+    
+  }
+  
+ 
+  @keyframes opacity {
+    0% {
+              opacity: 0;
+    }
+    100% {
+              opacity: 1;
+    }
+  }
+  @keyframes heart-animation
+  {
+    0%{
+      fill-opacity: 0;
+      stroke-opacity: 1;
+      
+    }
+    
+    100%{
+        fill-opacity: 1;
+        stroke-opacity: 0;
+    }
+
+  }
+ @keyframes loading_page
+ {
+   100%{
+     opacity: 0;
+     z-index: -10;
+   }
+ }
+ @keyframes loading
+ {
+   100%{
+    transform: rotate(360deg);
+   }
+ }
+  #bloc1
+  {
+    animation-delay: 0.1s;
+  }
+  #bloc2
+  {
+    animation-delay: 0.2s;
+  }
+  #bloc3
+  {
+    animation-delay: 0.3s;
+  }
+  #bloc4
+  {
+    animation-delay: 0.4s;
+  }
+  #bloc5
+  {
+    animation-delay: 0.5s;
+  }
+  #bloc6
+  {
+    animation-delay: 0.6s;
+  }
+  #bloc7
+  {
+    animation-delay: 0.7s;
+  }
+  #bloc8
+  {
+    animation-delay: 0.8s;
+  }
+  #bloc9
+  {
+    animation-delay: 0.9s;
+  }
+  
