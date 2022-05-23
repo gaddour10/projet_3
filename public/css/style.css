@@ -440,4 +440,39 @@ button:hover {
   animation: rotate 0.5s both;
 }
 
+footer {
+  margin: auto;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: black;
+  color: white;
+}
+footer .title {
+  font-family: "Shrikhand";
+}
+footer ul {
+  display: flex;
+  justify-content: space-around;
+}
+@media (max-width: 1000px) {
+  footer ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+}
+footer li {
+  cursor: pointer;
+  font-size: 20px;
+  font-family: "roboto";
+  list-style-type: none;
+}
+@media (max-width: 600px) {
+  footer {
+    justify-content: flex-start;
+    text-align: start;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */
