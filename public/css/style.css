@@ -1,3 +1,4 @@
+@charset "UTF-8";
 button {
   margin: auto;
   margin-top: 30px;
@@ -13,6 +14,430 @@ button {
 button:hover {
   background: linear-gradient(to bottom right, #fface8, #ae80e5);
   box-shadow: 0px 0px 10px 0px #343434;
+}
+
+.restaurants {
+  margin: auto;
+  padding-top: 30px;
+  background-color: whitesmoke;
+  font-family: "roboto";
+}
+.restaurants h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  padding-left: 20px;
+  padding-bottom: 20px;
+}
+.restaurants__blocs {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: auto;
+}
+.restaurants__blocs .details {
+  cursor: pointer;
+  border-radius: 20px;
+  box-shadow: 0px 2px 10px 0px #c2c2c2;
+  margin-bottom: 20px;
+}
+@media (max-width: 1100px) {
+  .restaurants__blocs .details {
+    width: 90%;
+  }
+}
+.restaurants__blocs .details img {
+  height: 250px;
+  object-fit: cover;
+  width: 100%;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+}
+.restaurants__blocs .details .hybrid {
+  width: 374.95px;
+}
+@media (max-width: 1100px) {
+  .restaurants__blocs .details .hybrid {
+    width: 100%;
+  }
+}
+.restaurants__blocs .details h2 {
+  padding-top: 10px;
+  padding-left: 25px;
+  margin: auto;
+}
+.restaurants__blocs .details__description {
+  padding-left: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+.restaurants__blocs .details__description p {
+  margin: auto;
+  margin-left: 15px;
+  margin-bottom: 15px;
+}
+.restaurants__blocs .details__description--heart {
+  padding: auto;
+  margin-top: -10px;
+  padding-right: 20px;
+  width: 20px;
+  cursor: pointer;
+  fill: transparent;
+  stroke: black;
+  stroke-width: 10;
+  stroke-opacity: 1;
+  transition: 1s;
+}
+.restaurants__blocs .details__description--heart:hover {
+  fill: url(#grad);
+  animation: heart-animation 1s linear;
+  stroke: transparent;
+}
+@media (max-width: 1100px) {
+  .restaurants__blocs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 90%;
+  }
+}
+
+.alphapage {
+  max-width: 100%;
+  margin: auto;
+  padding-bottom: 40px;
+  width: 40%;
+  position: relative;
+  background-color: whitesmoke;
+  border-top-right-radius: 50px;
+  border-top-left-radius: 50px;
+  font-family: "Roboto", sans-serif;
+}
+@media (max-width: 1000px) {
+  .alphapage {
+    width: 100%;
+  }
+}
+.alphapage .topsection {
+  margin: auto;
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 20px;
+  padding-right: 40px;
+  padding-left: 40px;
+}
+.alphapage .topsection .heart {
+  width: 50px;
+  cursor: pointer;
+  fill: transparent;
+  stroke: black;
+  stroke-width: 10;
+  stroke-opacity: 1;
+  transition: 0.5s;
+}
+.alphapage .topsection .heart:hover {
+  fill: url(#grad);
+  animation: heart-animation 1s linear;
+  stroke: transparent;
+}
+.alphapage .entrées {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 450px;
+}
+.alphapage .entrées h2 {
+  margin: auto;
+  padding-top: 15px;
+  padding-left: 15px;
+}
+.alphapage .entrées .title {
+  padding-bottom: 10px;
+  display: flex;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: #99E2D0 2px solid;
+  width: 100%;
+}
+@media (max-width: 800px) {
+  .alphapage .entrées .title {
+    margin-left: 20px;
+    justify-content: flex-start;
+    width: 10%;
+  }
+}
+.alphapage .entrées__blocs {
+  cursor: pointer;
+  animation: opacity 3s both;
+  font-size: 12px;
+  border-radius: 20px;
+  box-shadow: 0px 0px 10px 0px gainsboro;
+  background-color: white;
+  width: 90%;
+  margin: auto;
+  padding-left: 5px;
+}
+.alphapage .entrées__blocs--description {
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.alphapage .entrées__blocs--description:hover .description2 p {
+  display: flex;
+  padding-right: 20px;
+  transform-origin: right;
+  transition: 700ms;
+}
+.alphapage .entrées__blocs--description:hover .description2 .validation {
+  display: flex;
+  animation: slide-left 400ms linear;
+  transform-origin: right;
+}
+.alphapage .entrées__blocs--description h3 {
+  padding-left: 12px;
+  white-space: nowrap;
+}
+.alphapage .entrées__blocs--description .description2 {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 7px;
+  display: flex;
+}
+.alphapage .entrées__blocs--description .description2 p {
+  position: relative;
+  font-weight: bold;
+  padding-right: 10px;
+}
+.alphapage .entrées__blocs--description .description1 {
+  text-overflow: ellipsis;
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.alphapage .entrées__blocs--description .validation {
+  display: none;
+  position: relative;
+  font-size: 35px;
+  color: white;
+  background-color: #99E2D0;
+  border-radius: 0 20px 20px 0;
+  padding: 0 13px;
+  height: 82px;
+}
+.alphapage .entrées__blocs--description .validation i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  height: 100%;
+  transform: rotate(180deg);
+  animation: rotate 0.5s both;
+}
+.alphapage .plats {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 450px;
+}
+.alphapage .plats h2 {
+  margin: auto;
+  padding-top: 15px;
+  padding-left: 15px;
+}
+.alphapage .plats .title {
+  padding-bottom: 10px;
+  display: flex;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: #99E2D0 2px solid;
+  width: 100%;
+}
+@media (max-width: 800px) {
+  .alphapage .plats .title {
+    margin-left: 20px;
+    justify-content: flex-start;
+    width: 10%;
+  }
+}
+.alphapage .plats__blocs {
+  cursor: pointer;
+  animation: opacity 3s both;
+  font-size: 12px;
+  border-radius: 20px;
+  box-shadow: 0px 0px 10px 0px gainsboro;
+  background-color: white;
+  width: 90%;
+  margin: auto;
+  padding-left: 5px;
+}
+.alphapage .plats__blocs--description {
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.alphapage .plats__blocs--description:hover .description2 p {
+  display: flex;
+  padding-right: 20px;
+  transform-origin: right;
+  transition: 700ms;
+}
+.alphapage .plats__blocs--description:hover .description2 .validation {
+  display: flex;
+  animation: slide-left 400ms linear;
+  transform-origin: right;
+}
+.alphapage .plats__blocs--description h3 {
+  padding-left: 12px;
+  white-space: nowrap;
+}
+.alphapage .plats__blocs--description .description2 {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 7px;
+  display: flex;
+}
+.alphapage .plats__blocs--description .description2 p {
+  position: relative;
+  font-weight: bold;
+  padding-right: 10px;
+}
+.alphapage .plats__blocs--description .description1 {
+  text-overflow: ellipsis;
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.alphapage .plats__blocs--description .validation {
+  display: none;
+  position: relative;
+  font-size: 35px;
+  color: white;
+  background-color: #99E2D0;
+  border-radius: 0 20px 20px 0;
+  padding: 0 13px;
+  height: 82px;
+}
+.alphapage .plats__blocs--description .validation i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  height: 100%;
+  transform: rotate(180deg);
+  animation: rotate 0.5s both;
+}
+.alphapage .desserts {
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 450px;
+}
+.alphapage .desserts h2 {
+  margin: auto;
+  padding-top: 15px;
+  padding-left: 15px;
+}
+.alphapage .desserts .title {
+  padding-bottom: 10px;
+  display: flex;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: #99E2D0 2px solid;
+  width: 100%;
+}
+@media (max-width: 800px) {
+  .alphapage .desserts .title {
+    margin-left: 20px;
+    justify-content: flex-start;
+    width: 10%;
+  }
+}
+.alphapage .desserts__blocs {
+  cursor: pointer;
+  animation: opacity 3s both;
+  font-size: 12px;
+  border-radius: 20px;
+  box-shadow: 0px 0px 10px 0px gainsboro;
+  background-color: white;
+  width: 90%;
+  margin: auto;
+  padding-left: 5px;
+}
+.alphapage .desserts__blocs--description {
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.alphapage .desserts__blocs--description:hover .description2 p {
+  display: flex;
+  padding-right: 20px;
+  transform-origin: right;
+  transition: 700ms;
+}
+.alphapage .desserts__blocs--description:hover .description2 .validation {
+  display: flex;
+  animation: slide-left 400ms linear;
+  transform-origin: right;
+}
+.alphapage .desserts__blocs--description h3 {
+  padding-left: 12px;
+  white-space: nowrap;
+}
+.alphapage .desserts__blocs--description .description2 {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 7px;
+  display: flex;
+}
+.alphapage .desserts__blocs--description .description2 p {
+  position: relative;
+  font-weight: bold;
+  padding-right: 10px;
+}
+.alphapage .desserts__blocs--description .description1 {
+  text-overflow: ellipsis;
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.alphapage .desserts__blocs--description .validation {
+  display: none;
+  position: relative;
+  font-size: 35px;
+  color: white;
+  background-color: #99E2D0;
+  border-radius: 0 20px 20px 0;
+  padding: 0 13px;
+  height: 82px;
+}
+.alphapage .desserts__blocs--description .validation i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  height: 100%;
+  transform: rotate(180deg);
+  animation: rotate 0.5s both;
 }
 
 /*# sourceMappingURL=style.css.map */
