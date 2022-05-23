@@ -1,0 +1,64 @@
+.v1
+{
+    @include center;
+    flex-direction: column;
+    img
+    {
+        padding-top: 10px;
+        padding-bottom: 10px;
+       @media (max-width:768px) 
+       {
+           max-width: 100%;
+           width: 200px;
+       }
+       @media (max-width:992)
+       {
+           
+       }
+        
+    }
+    .location
+    {
+        max-width:100%;
+        margin: auto;
+        font-family: 'Roboto';
+        font-size: 16px;
+        @include center;
+        background-color: lighten($color: lightgrey, $amount: 6%) ;
+        border-top: 2px solid grey;
+        width:100%;
+        i
+        {
+            padding-right: 10px;
+            @include center;
+            padding-bottom: 10px;
+        }
+    }
+}
+.v2
+{
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+ 
+    img
+    {
+        
+        margin: auto;
+        max-width: 100%;
+        width: 200px;
+        padding-bottom: 10px;
+        padding-top: 10px;
+        
+        @include center;
+    }
+    a
+    {
+        @include center;
+        padding-left: 20px;
+        font-size: 30px;
+        
+        
+    }
+    
+}
