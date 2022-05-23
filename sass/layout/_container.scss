@@ -1,0 +1,158 @@
+.restaurants
+{
+       margin: auto;
+    padding-top: 30px;
+    background-color: whitesmoke;
+    font-family: 'roboto';
+    h1
+    {
+        @include center;
+        margin: auto;
+        padding-left: 20px;
+        padding-bottom: 20px;
+    }
+    &__blocs
+    {
+        display: flex;
+        
+        flex-wrap: wrap;   
+        justify-content: space-between;  
+        
+        margin: auto;
+        .details
+        {
+            
+            cursor: pointer;
+            @include border-shadow;
+            margin-bottom: 20px;
+            @media (max-width:1100px) {
+                width: 90%;
+                
+            }
+        
+        img
+        {
+            height: 250px;
+            object-fit: cover;
+            width: 100%;
+            border-top-right-radius: 20px;
+            border-top-left-radius: 20px;
+        }
+        .hybrid
+        {
+            width: 374.950px;
+            @media (max-width:1100px) {
+                width: 100%;
+                
+            }
+        }
+        h2
+        {
+            padding-top: 10px;
+            padding-left: 25px;
+            margin: auto;
+        }
+        &__description
+        {
+            padding-left: 10px;
+            display: flex;
+            justify-content: space-between;
+            
+            p
+            {
+                margin: auto;
+                margin-left: 15px;
+                margin-bottom: 15px;
+            }
+            &--heart
+            {
+                padding: auto;
+                margin-top: -10px;
+                padding-right: 20px;
+                width: 20px;
+            cursor: pointer;
+            fill: transparent;
+            stroke: black ;
+            stroke-width: 10;
+            stroke-opacity: 1;
+            transition: 1s;
+            &:hover
+            {
+                
+                fill: url(#grad);
+                animation: heart-animation 1s linear;
+                stroke: transparent;
+                
+            }
+            }
+            
+        }
+        }
+          @media (max-width:1100px) {
+              @include center;
+              flex-direction: column;
+              width: 90%;
+          }
+    }
+}
+.alphapage
+{
+    max-width: 100%;
+    margin: auto;
+    padding-bottom: 40px;
+    width: 40%;
+    position:relative;
+    background-color: whitesmoke;
+    border-top-right-radius: 50px;
+    border-top-left-radius: 50px;
+    font-family: 'Roboto', sans-serif;
+    @media (max-width:1000px)
+    {
+        width: 100%;
+    }
+    .topsection
+    {
+        margin: auto;
+        padding-top: 20px;
+        display: flex;
+        justify-content: space-between;
+        padding-left: 20px;
+        padding-right: 40px;
+        padding-left: 40px;
+
+        .heart
+        {
+            width: 50px;
+            cursor: pointer;
+            fill: transparent;
+            stroke: black ;
+            stroke-width: 10;
+            stroke-opacity: 1;
+            transition: 0.5s;
+            &:hover
+            {
+                
+                fill: url(#grad);
+                animation: heart-animation 1s linear;
+                stroke: transparent;
+                
+            }
+        }
+    }
+    .entrées
+    {
+        @include blocs;
+        
+    }
+    .plats
+    {
+        margin: auto;
+        @include blocs;
+}
+    .desserts
+    {
+        margin-bottom: 30px;
+        @include blocs;
+    }
+
+}
