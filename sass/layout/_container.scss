@@ -14,14 +14,19 @@
     &__blocs
     {
         display: flex;
-        
+        max-width: 100%;  
+        width: 800px; 
         flex-wrap: wrap;   
         justify-content: space-between;  
         
         margin: auto;
         .details
         {
-            
+            .nouveau
+            {
+                color: green;
+            }
+            position: relative;
             cursor: pointer;
             @include border-shadow;
             margin-bottom: 20px;
@@ -122,7 +127,8 @@
 
         .heart
         {
-            width: 50px;
+            width: 30px;
+            padding-top:20px;
             cursor: pointer;
             fill: transparent;
             stroke: black ;
