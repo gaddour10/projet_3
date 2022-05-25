@@ -22,14 +22,22 @@
         margin: auto;
         .details
         {
-            .nouveau
-            {
-                color: green;
-            }
+            
             position: relative;
             cursor: pointer;
             @include border-shadow;
             margin-bottom: 20px;
+            .nouveau
+            {
+                position: absolute;
+                background-color: $color-tertiaire;
+                padding: 5px 10px 5px 10px;
+                right: 30px;
+                bottom: 250px;
+                color: darken($color: $color-tertiaire, $amount: 50%);
+                font-size:large;
+                font-weight: bold;
+            }
             @media (max-width:1100px) {
                 width: 90%;
                 
@@ -71,7 +79,6 @@
             }
             &--heart
             {
-                padding: auto;
                 margin-top: -10px;
                 padding-right: 20px;
                 width: 20px;
@@ -99,66 +106,4 @@
               width: 90%;
           }
     }
-}
-.alphapage
-{
-    max-width: 100%;
-    margin: auto;
-    padding-bottom: 40px;
-    width: 40%;
-    position:relative;
-    background-color: whitesmoke;
-    border-top-right-radius: 50px;
-    border-top-left-radius: 50px;
-    font-family: 'Roboto', sans-serif;
-    @media (max-width:1000px)
-    {
-        width: 100%;
-    }
-    .topsection
-    {
-        margin: auto;
-        padding-top: 20px;
-        display: flex;
-        justify-content: space-between;
-        padding-left: 20px;
-        padding-right: 40px;
-        padding-left: 40px;
-
-        .heart
-        {
-            width: 30px;
-            padding-top:20px;
-            cursor: pointer;
-            fill: transparent;
-            stroke: black ;
-            stroke-width: 10;
-            stroke-opacity: 1;
-            transition: 0.5s;
-            &:hover
-            {
-                
-                fill: url(#grad);
-                animation: heart-animation 1s linear;
-                stroke: transparent;
-                
-            }
-        }
-    }
-    .entrées
-    {
-        @include blocs;
-        
-    }
-    .plats
-    {
-        margin: auto;
-        @include blocs;
-}
-    .desserts
-    {
-        margin-bottom: 30px;
-        @include blocs;
-    }
-
 }
