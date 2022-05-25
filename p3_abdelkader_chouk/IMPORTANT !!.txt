@@ -1,0 +1,4 @@
+j'ai eu un problème avec mon premier repositorie en github, je ne pouvais pas le publier aprés avoir terminé le travail, 
+donc je l'ai supprimé et j'ai créé un nouveau repositorie(mais sans avoir enregistré tous les commits) après l'avoir fait et l'avoir 
+montré à mon mentor, elle m'a dit que les commits devraient être accessible, elle a donc proposé de créer un nouveau repositorie et 
+de refaire le travail en commitant chaque partie, c'est pourquoi vous remarquerez que les commits se font en 2 jours.
