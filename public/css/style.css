@@ -331,6 +331,9 @@ a {
   height: 450px;
 }
 .alphapage .entrées h2 {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
   margin: auto;
   padding-top: 15px;
   padding-left: 15px;
@@ -382,7 +385,9 @@ a {
 }
 .alphapage .entrées__blocs--description h3 {
   padding-left: 12px;
+  text-overflow: ellipsis;
   white-space: nowrap;
+  overflow: hidden;
 }
 .alphapage .entrées__blocs--description .description2 {
   position: relative;
@@ -430,6 +435,9 @@ a {
   height: 450px;
 }
 .alphapage .plats h2 {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
   margin: auto;
   padding-top: 15px;
   padding-left: 15px;
@@ -481,7 +489,9 @@ a {
 }
 .alphapage .plats__blocs--description h3 {
   padding-left: 12px;
+  text-overflow: ellipsis;
   white-space: nowrap;
+  overflow: hidden;
 }
 .alphapage .plats__blocs--description .description2 {
   position: relative;
@@ -529,6 +539,9 @@ a {
   height: 450px;
 }
 .alphapage .desserts h2 {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
   margin: auto;
   padding-top: 15px;
   padding-left: 15px;
@@ -580,7 +593,9 @@ a {
 }
 .alphapage .desserts__blocs--description h3 {
   padding-left: 12px;
+  text-overflow: ellipsis;
   white-space: nowrap;
+  overflow: hidden;
 }
 .alphapage .desserts__blocs--description .description2 {
   position: relative;
