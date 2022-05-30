@@ -876,7 +876,6 @@ a {
   margin: auto;
 }
 .restaurants__blocs .details__description {
-  padding-left: px;
   display: flex;
   justify-content: space-between;
 }
@@ -933,7 +932,6 @@ footer ul {
     align-items: center;
     flex-direction: column;
     display: flex;
-    text-align: flex-start;
     justify-content: left;
     align-content: flex-start;
     align-items: flex-start;
