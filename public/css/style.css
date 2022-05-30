@@ -425,7 +425,7 @@ a {
   transform-origin: right;
 }
 .alphapage .entrées__blocs--description p {
-  font-size: 15px;
+  font-size: 14px;
   margin: auto;
   padding-left: 15px;
   padding-bottom: 10px;
@@ -461,7 +461,7 @@ a {
   background-color: #99E2D0;
   border-radius: 0 20px 20px 0;
   padding: 0 13px;
-  height: 82px;
+  height: 65px;
 }
 .alphapage .entrées__blocs--description .validation i {
   display: flex;
@@ -644,7 +644,7 @@ a {
   transform-origin: right;
 }
 .alphapage .plats__blocs--description p {
-  font-size: 15px;
+  font-size: 14px;
   margin: auto;
   padding-left: 15px;
   padding-bottom: 10px;
@@ -680,7 +680,7 @@ a {
   background-color: #99E2D0;
   border-radius: 0 20px 20px 0;
   padding: 0 13px;
-  height: 82px;
+  height: 65px;
 }
 .alphapage .plats__blocs--description .validation i {
   display: flex;
@@ -755,7 +755,7 @@ a {
   transform-origin: right;
 }
 .alphapage .desserts__blocs--description p {
-  font-size: 15px;
+  font-size: 14px;
   margin: auto;
   padding-left: 15px;
   padding-bottom: 10px;
@@ -791,7 +791,7 @@ a {
   background-color: #99E2D0;
   border-radius: 0 20px 20px 0;
   padding: 0 13px;
-  height: 82px;
+  height: 65px;
 }
 .alphapage .desserts__blocs--description .validation i {
   display: flex;
