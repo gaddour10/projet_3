@@ -6,11 +6,13 @@
     margin: auto;   
     flex-direction: column;
     width: 100%;
-    height: 250px;
+    height: 270px;
     background-color: whitesmoke;
     border-top-right-radius: 0px;
     h1
     {
+        font-weight: normal;
+
         text-align: center;
         padding-top: 30px;
         margin: auto;
@@ -36,12 +38,19 @@ a
 .fonctionnement
 {
     padding-bottom: 60px;
-    
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
     h1
     {
+        display: block;
+        
+        padding-top: 20px;
         @include center;
         padding-left: 40px;
+        @media (max-width:600px) {
+            display: flex;
+            justify-content: flex-start;
+            
+        }
     }
 
     &__blocs
@@ -75,7 +84,17 @@ a
            {
                @include center;
                padding-right: 15px;
+               
            }
+           &:hover
+               {
+                   i
+                   {
+                    color: $color-primary;
+                   }
+                   
+               }
+           
            p
            {
                @include center;

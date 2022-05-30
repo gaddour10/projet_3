@@ -11,10 +11,7 @@
            max-width: 100%;
            width: 200px;
        }
-       @media (max-width:992)
-       {
-           
-       }
+       
         
     }
     .location
@@ -32,6 +29,10 @@
             padding-right: 10px;
             @include center;
             padding-bottom: 10px;
+        }
+        p
+        {
+            font-weight: bold;
         }
     }
 }

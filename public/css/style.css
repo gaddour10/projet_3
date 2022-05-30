@@ -130,17 +130,38 @@ button:hover {
   box-shadow: 0px 0px 10px 0px #343434;
 }
 
+.buttons {
+  margin: auto;
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 17px;
+  padding: 15px 50px 15px 50px;
+  border-radius: 25px;
+  border: none;
+  color: white;
+  background: linear-gradient(to bottom right, #ff79da, #9356dc);
+  cursor: pointer;
+  box-shadow: 0px 0px 10px 0px gray;
+}
+.buttons:hover {
+  background: linear-gradient(to bottom right, #fface8, #ae80e5);
+  box-shadow: 0px 0px 10px 0px #343434;
+}
+
 .topsectionv0 {
   max-width: 100%;
   font-family: "roboto";
   margin: auto;
   flex-direction: column;
   width: 100%;
-  height: 250px;
+  height: 270px;
   background-color: whitesmoke;
   border-top-right-radius: 0px;
 }
 .topsectionv0 h1 {
+  font-weight: normal;
   text-align: center;
   padding-top: 30px;
   margin: auto;
@@ -165,10 +186,18 @@ a {
   font-family: "Roboto", sans-serif;
 }
 .fonctionnement h1 {
+  display: block;
+  padding-top: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
   padding-left: 40px;
+}
+@media (max-width: 600px) {
+  .fonctionnement h1 {
+    display: flex;
+    justify-content: flex-start;
+  }
 }
 .fonctionnement__blocs {
   display: flex;
@@ -203,6 +232,9 @@ a {
   justify-content: center;
   align-items: center;
   padding-right: 15px;
+}
+.fonctionnement__blocs--design:hover i {
+  color: #9356DC;
 }
 .fonctionnement__blocs--design p {
   display: flex;
@@ -284,6 +316,10 @@ a {
   }
 }
 
+#SPECIAL {
+  height: 280px;
+}
+
 .alphapage {
   max-width: 100%;
   margin: auto;
@@ -305,9 +341,11 @@ a {
   padding-top: 20px;
   display: flex;
   justify-content: space-between;
-  padding-left: 20px;
   padding-right: 40px;
-  padding-left: 40px;
+  padding-left: 20px;
+}
+.alphapage .topsection h1 {
+  font-family: "Shrikhand";
 }
 .alphapage .topsection .heart {
   width: 30px;
@@ -328,9 +366,11 @@ a {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  height: 450px;
+  height: 300px;
 }
 .alphapage .entrées h2 {
+  font-size: 17px;
+  width: auto;
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
@@ -339,20 +379,21 @@ a {
   padding-left: 15px;
 }
 .alphapage .entrées .title {
+  font-size: 20px;
   padding-bottom: 10px;
   display: flex;
   text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
-  border-bottom: #99E2D0 2px solid;
+  border-bottom: #99E2D0 3px solid;
   width: 100%;
 }
 @media (max-width: 800px) {
   .alphapage .entrées .title {
     margin-left: 20px;
     justify-content: flex-start;
-    width: 10%;
+    width: 15%;
   }
 }
 .alphapage .entrées__blocs {
@@ -383,8 +424,11 @@ a {
   animation: slide-left 400ms linear;
   transform-origin: right;
 }
-.alphapage .entrées__blocs--description h3 {
-  padding-left: 12px;
+.alphapage .entrées__blocs--description p {
+  font-size: 15px;
+  margin: auto;
+  padding-left: 15px;
+  padding-bottom: 10px;
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
@@ -398,6 +442,7 @@ a {
   display: flex;
 }
 .alphapage .entrées__blocs--description .description2 p {
+  padding-top: 35px;
   position: relative;
   font-weight: bold;
   padding-right: 10px;
@@ -427,14 +472,124 @@ a {
   transform: rotate(180deg);
   animation: rotate 0.5s both;
 }
+.alphapage .entréesspecial {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 400px;
+}
+.alphapage .entréesspecial h2 {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  margin: auto;
+  padding-top: 15px;
+  padding-left: 15px;
+}
+.alphapage .entréesspecial .title {
+  font-size: 20px;
+  padding-bottom: 10px;
+  display: flex;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: #99E2D0 3px solid;
+  width: 100%;
+}
+@media (max-width: 800px) {
+  .alphapage .entréesspecial .title {
+    margin-left: 20px;
+    justify-content: flex-start;
+    width: 15%;
+  }
+}
+.alphapage .entréesspecial__blocs {
+  cursor: pointer;
+  animation: opacity 3s both;
+  font-size: 12px;
+  border-radius: 20px;
+  box-shadow: 0px 0px 10px 0px gainsboro;
+  background-color: white;
+  width: 90%;
+  margin: auto;
+  padding-left: 5px;
+}
+.alphapage .entréesspecial__blocs--description {
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.alphapage .entréesspecial__blocs--description:hover .description2 p {
+  display: flex;
+  padding-right: 20px;
+  transform-origin: right;
+  transition: 700ms;
+}
+.alphapage .entréesspecial__blocs--description:hover .description2 .validation {
+  display: flex;
+  animation: slide-left 400ms linear;
+  transform-origin: right;
+}
+.alphapage .entréesspecial__blocs--description p {
+  font-size: 15px;
+  margin: auto;
+  padding-left: 15px;
+  padding-bottom: 10px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.alphapage .entréesspecial__blocs--description .description2 {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 7px;
+  display: flex;
+}
+.alphapage .entréesspecial__blocs--description .description2 p {
+  padding-top: 35px;
+  position: relative;
+  font-weight: bold;
+  padding-right: 10px;
+}
+.alphapage .entréesspecial__blocs--description .description1 {
+  text-overflow: ellipsis;
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.alphapage .entréesspecial__blocs--description .validation {
+  display: none;
+  position: relative;
+  font-size: 35px;
+  color: white;
+  background-color: #99E2D0;
+  border-radius: 0 20px 20px 0;
+  padding: 0 13px;
+  height: 82px;
+}
+.alphapage .entréesspecial__blocs--description .validation i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  height: 100%;
+  transform: rotate(180deg);
+  animation: rotate 0.5s both;
+}
 .alphapage .plats {
   margin: auto;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  height: 450px;
+  height: 300px;
 }
 .alphapage .plats h2 {
+  font-size: 17px;
+  width: auto;
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
@@ -443,20 +598,21 @@ a {
   padding-left: 15px;
 }
 .alphapage .plats .title {
+  font-size: 20px;
   padding-bottom: 10px;
   display: flex;
   text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
-  border-bottom: #99E2D0 2px solid;
+  border-bottom: #99E2D0 3px solid;
   width: 100%;
 }
 @media (max-width: 800px) {
   .alphapage .plats .title {
     margin-left: 20px;
     justify-content: flex-start;
-    width: 10%;
+    width: 15%;
   }
 }
 .alphapage .plats__blocs {
@@ -487,8 +643,11 @@ a {
   animation: slide-left 400ms linear;
   transform-origin: right;
 }
-.alphapage .plats__blocs--description h3 {
-  padding-left: 12px;
+.alphapage .plats__blocs--description p {
+  font-size: 15px;
+  margin: auto;
+  padding-left: 15px;
+  padding-bottom: 10px;
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
@@ -502,6 +661,7 @@ a {
   display: flex;
 }
 .alphapage .plats__blocs--description .description2 p {
+  padding-top: 35px;
   position: relative;
   font-weight: bold;
   padding-right: 10px;
@@ -536,9 +696,11 @@ a {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  height: 450px;
+  height: 300px;
 }
 .alphapage .desserts h2 {
+  font-size: 17px;
+  width: auto;
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
@@ -547,20 +709,21 @@ a {
   padding-left: 15px;
 }
 .alphapage .desserts .title {
+  font-size: 20px;
   padding-bottom: 10px;
   display: flex;
   text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
-  border-bottom: #99E2D0 2px solid;
+  border-bottom: #99E2D0 3px solid;
   width: 100%;
 }
 @media (max-width: 800px) {
   .alphapage .desserts .title {
     margin-left: 20px;
     justify-content: flex-start;
-    width: 10%;
+    width: 15%;
   }
 }
 .alphapage .desserts__blocs {
@@ -591,8 +754,11 @@ a {
   animation: slide-left 400ms linear;
   transform-origin: right;
 }
-.alphapage .desserts__blocs--description h3 {
-  padding-left: 12px;
+.alphapage .desserts__blocs--description p {
+  font-size: 15px;
+  margin: auto;
+  padding-left: 15px;
+  padding-bottom: 10px;
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
@@ -606,6 +772,7 @@ a {
   display: flex;
 }
 .alphapage .desserts__blocs--description .description2 p {
+  padding-top: 35px;
   position: relative;
   font-weight: bold;
   padding-right: 10px;
@@ -650,6 +817,13 @@ a {
   padding-left: 20px;
   padding-bottom: 20px;
 }
+@media (max-width: 600px) {
+  .restaurants h1 {
+    display: block;
+    justify-content: flex-start;
+    padding-left: 40px;
+  }
+}
 .restaurants__blocs {
   display: flex;
   max-width: 100%;
@@ -669,11 +843,12 @@ a {
   position: absolute;
   background-color: #99E2D0;
   padding: 5px 10px 5px 10px;
-  right: 30px;
-  bottom: 250px;
+  right: 10px;
+  bottom: 190px;
   color: #1b6150;
   font-size: large;
   font-weight: bold;
+  font-size: 15px;
 }
 @media (max-width: 1100px) {
   .restaurants__blocs .details {
@@ -681,7 +856,7 @@ a {
   }
 }
 .restaurants__blocs .details img {
-  height: 250px;
+  height: 180px;
   object-fit: cover;
   width: 100%;
   border-top-right-radius: 20px;
@@ -695,13 +870,13 @@ a {
     width: 100%;
   }
 }
-.restaurants__blocs .details h2 {
+.restaurants__blocs .details h3 {
   padding-top: 10px;
-  padding-left: 25px;
+  padding-left: 15px;
   margin: auto;
 }
 .restaurants__blocs .details__description {
-  padding-left: 10px;
+  padding-left: px;
   display: flex;
   justify-content: space-between;
 }
@@ -738,13 +913,15 @@ a {
 
 footer {
   margin: auto;
+  margin-top: 20px;
   padding-top: 30px;
   padding-bottom: 30px;
-  background-color: black;
+  background-color: #333333;
   color: white;
 }
 footer .title {
   font-family: "Shrikhand";
+  padding-bottom: 25px;
 }
 footer ul {
   display: flex;
@@ -756,6 +933,11 @@ footer ul {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    display: flex;
+    text-align: flex-start;
+    justify-content: left;
+    align-content: flex-start;
+    align-items: flex-start;
   }
 }
 footer li {
@@ -763,12 +945,10 @@ footer li {
   font-size: 20px;
   font-family: "roboto";
   list-style-type: none;
+  padding-bottom: 15px;
 }
-@media (max-width: 600px) {
-  footer {
-    justify-content: flex-start;
-    text-align: start;
-  }
+footer .contact {
+  color: white;
 }
 
 .v1 {
@@ -805,6 +985,9 @@ footer li {
   justify-content: center;
   align-items: center;
   padding-bottom: 10px;
+}
+.v1 .location p {
+  font-weight: bold;
 }
 
 .v2 {

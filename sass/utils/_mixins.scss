@@ -21,12 +21,12 @@
             bottom: 30px;
                     
 }
-@mixin blocs {
+@mixin specialbloc {
     display: flex;
     
     flex-direction: column;
     justify-content: space-around;
-    height: 450px;
+    height: 400px;
     h2
     
         {
@@ -39,19 +39,20 @@
         }
         .title
         {
+            font-size: 20px;
             padding-bottom: 10px;
             display: flex;
             text-align: center;
             @include center;
             
-            border-bottom: #99E2D0 2px solid;
+            border-bottom: #99E2D0 3px solid;
             width: 100%;
             @media (max-width:800px)
             {
                 margin-left: 20px;
 
                 justify-content: flex-start;
-                width: 10%;
+                width: 15%;
                 
             }
         }
@@ -89,9 +90,12 @@
                     }
                    
                 }
-                h3
+                p
                 {
-                    padding-left: 12px;
+                    font-size: 15px;
+                    margin: auto;
+                    padding-left: 15px;
+                    padding-bottom: 10px;
                     text-overflow: ellipsis;
                         white-space: nowrap;
                         overflow:hidden;
@@ -104,6 +108,149 @@
                     display: flex;
                     p
                     {
+                        padding-top: 35px;
+                        position:relative;
+                        font-weight: bold;
+                        padding-right: 10px;
+                    }
+                }
+                .description1
+                {
+                        text-overflow: ellipsis;
+                        display: inline-block;
+                        white-space: nowrap;
+                        overflow:hidden;
+
+                }
+                .validation
+                {
+                    display: none;
+                    position: relative;
+                    font-size: 35px;
+                    color:white;
+                    background-color: $color-tertiaire;
+                    border-radius: 0 20px 20px 0;
+                    padding: 0 13px;
+                    height: 82px;
+                    
+                    
+                    
+                        
+                    i
+                    {
+                        
+                        
+                        @include center;
+                        align-content: center;
+                        height: 100%;
+                        transform: rotate(180deg);
+                        animation: rotate 0.5s both;
+
+                    
+                    }
+                    
+                }
+                
+            
+            }
+        }
+}
+    
+
+@mixin blocs {
+    display: flex;
+    
+    flex-direction: column;
+    justify-content: space-around;
+    height: 300px;
+    h2
+    
+        {
+            font-size: 17px;
+             width: auto;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow:hidden;
+            
+                
+            
+            
+            margin: auto;
+            padding-top: 15px;
+            padding-left: 15px;
+        }
+        .title
+        {
+            font-size: 20px;
+            padding-bottom: 10px;
+            display: flex;
+            text-align: center;
+            @include center;
+            
+            border-bottom: #99E2D0 3px solid;
+            width: 100%;
+            @media (max-width:800px)
+            {
+                margin-left: 20px;
+
+                justify-content: flex-start;
+                width: 15%;
+                
+            }
+        }
+        &__blocs
+        {
+            
+            cursor:pointer;
+            animation : opacity 3s both;
+            font-size : 12px;
+            @include border-shadowv2;
+            
+            &--description
+            {
+                
+                margin: auto;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                &:hover .description2
+                {  
+                    p
+                    {
+                        display: flex;
+                        padding-right: 20px;
+                   transform-origin: right;
+                   transition: 700ms;
+                   
+                    }
+                    .validation
+                    {
+                    display: flex;
+                   animation: slide-left 400ms linear ;
+                   transform-origin: right;
+                   
+                    }
+                   
+                }
+                p
+                {
+                    font-size: 15px;
+                    margin: auto;
+                    padding-left: 15px;
+                    padding-bottom: 10px;
+                    text-overflow: ellipsis;
+                        white-space: nowrap;
+                        overflow:hidden;
+                }
+                .description2
+                {
+                    position: relative;
+                    @include center;
+                    padding-left: 7px;
+                    display: flex;
+                    p
+                    {
+                        padding-top: 35px;
                         position:relative;
                         font-weight: bold;
                         padding-right: 10px;

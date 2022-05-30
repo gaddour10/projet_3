@@ -1,24 +1,33 @@
 footer
 {  
     margin: auto;
+    margin-top: 20px;
     .title
     {
         font-family: 'Shrikhand';
+        padding-bottom: 25px;
     }
     padding-top: 30px;
     padding-bottom: 30px;
-    background-color: black;
+    background-color: lighten($color: black, $amount: 20%) ;
     color: white;
     ul
     {
 
         display: flex;
         justify-content: space-around;
+
         @media (max-width:1000px)
         {
             @include center;
             flex-direction: column;
+            display: flex;
+    text-align: flex-start;
+    justify-content: left;
+    align-content: flex-start;
+    align-items: flex-start;
         }
+        
 
     }
     li
@@ -26,12 +35,16 @@ footer
         cursor: pointer;
         font-size: 20px;
         font-family: 'roboto';
-        
         list-style-type: none;
+        padding-bottom: 15px;
+
+        
+        
     }
-    @media (max-width:600px) {
-    justify-content: flex-start;
-    text-align: start;
+    .contact
+    {
+        color:white;
     }
+    
 
 }
